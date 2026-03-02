@@ -1,4 +1,5 @@
 <template>
+  <div>
   <!-- HERO -->
   <section class="hero">
     <div class="hero__bg"></div>
@@ -119,6 +120,7 @@
       <p class="footer__copy">&copy; {{ new Date().getFullYear() }} Portfolio</p>
     </div>
   </footer>
+  </div>
 </template>
 
 <script setup>
