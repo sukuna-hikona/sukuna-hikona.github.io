@@ -6,16 +6,16 @@
     <div class="hero__content">
       <p class="hero__greeting">Web Application Engineer</p>
       <h1 class="hero__title">
-        フルスタック開発と<br>セキュリティの実践知
+        フルスタック開発と<br>セキュリティの視点
       </h1>
       <p class="hero__subtitle">
-        Laravel + Vue.js を軸に13年。サーバー構築から設計・実装・運用まで一貫して対応。
+        Laravel + Vue.js を軸に、サーバー構築から設計・実装・運用まで一貫して対応。
         情報処理安全確保支援士の知見を活かし、セキュアなWebアプリケーションを構築します。
       </p>
       <div class="hero__badges">
         <span class="badge">Laravel / PHP</span>
         <span class="badge">Vue.js</span>
-        <span class="badge">Java / SpringBoot</span>
+        <span class="badge">SpringBoot / Java</span>
         <span class="badge">MySQL</span>
         <span class="badge">Linux</span>
         <span class="badge">Docker</span>
@@ -31,7 +31,7 @@
     <div class="about__content">
       <div class="about__text">
         <p>
-          Webアプリケーションエンジニアとして13年の経験を持ち、
+          Webアプリケーションエンジニアとして、
           Laravel + Vue.js を中心としたフルスタック開発、Linuxサーバー構築・運用を専門としています。
         </p>
         <p>
@@ -46,10 +46,6 @@
         </p>
       </div>
       <div class="about__info">
-        <div class="about__card">
-          <p class="about__card-label">経験年数</p>
-          <p class="about__card-value">13年（2026年現在）</p>
-        </div>
         <div class="about__card">
           <p class="about__card-label">保有資格</p>
           <p class="about__card-value" v-for="cert in certifications" :key="cert">{{ cert }}</p>

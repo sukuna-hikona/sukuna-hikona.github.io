@@ -158,7 +158,7 @@ export const projects = [
     title: '請求及び明細書作成アプリケーション',
     period: '2023年7月〜2024年2月',
     role: 'フリーランス / 全体8名',
-    tags: ['Java', 'SpringBoot', 'Bootstrap'],
+    tags: ['SpringBoot', 'Java', 'Bootstrap'],
     summary: '既存社内システムのリニューアル案件。アカウント管理と請求書作成機能を担当。GitHubを利用したブランチ運用・プルリクエストベースの開発フローを実践的に習得。',
     detail: {
       challenges: [
@@ -166,9 +166,9 @@ export const projects = [
         '複数メンバーによるDB定義の整合性確保',
         'ブランチ運用・プルリクエストベースの開発フロー未経験'
       ],
-      solution: '既存社内システムをJava / SpringBoot + Bootstrapでフルリニューアル。GitHubを活用したモダンな開発フローを導入し、チーム全体の開発効率を向上させた。',
+      solution: '既存社内システムをSpringBoot / Java + Bootstrapでフルリニューアル。GitHubを活用したモダンな開発フローを導入し、チーム全体の開発効率を向上させた。',
       techStack: {
-        'Backend': 'Java / SpringBoot',
+        'Backend': 'SpringBoot / Java',
         'Frontend': 'JavaScript / CSS / Bootstrap'
       },
       scale: {
@@ -192,7 +192,7 @@ export const projects = [
     title: 'BRAVIA入力異常検知アプリケーション',
     period: '2021年11月〜2022年2月',
     role: '会社員 / 1名',
-    tags: ['Java', 'SpringBoot', 'Tomcat'],
+    tags: ['SpringBoot', 'Java', 'Tomcat'],
     summary: 'SONY BRAVIAモニタの入力信号を監視し、異常検知時に自動通知。API調査からデプロイまで全工程を一人で完遂。Webhook通知とハードウェアAPI連携を経験。',
     detail: {
       challenges: [
@@ -202,7 +202,7 @@ export const projects = [
       ],
       solution: 'SONY BRAVIA APIと連携し、入力信号の状態を自動監視するSpringBootアプリケーションを構築。Webhook通知により、異常検知時に即座に担当者へ通知し、現場の運用負荷を大幅に削減した。',
       techStack: {
-        'Backend': 'Java / SpringBoot',
+        'Backend': 'SpringBoot / Java',
         'Frontend': 'JavaScript / CSS',
         'Server OS': 'Windows 10',
         'MW': 'Tomcat'
@@ -229,7 +229,7 @@ export const projects = [
     title: 'リモートCALL 授業支援システム',
     period: '2021年5月〜2024年1月',
     role: '会社員 / 全体3名',
-    tags: ['Java', 'SpringBoot', 'MariaDB', 'Ubuntu', 'Nginx'],
+    tags: ['SpringBoot', 'Java', 'MariaDB', 'Ubuntu', 'Nginx'],
     summary: 'デスクトップアプリ・AV機器・Webアプリの3者間連携による授業支援システム。API作成、TCP通信機構構築、サーバー2台の構築など幅広く担当。',
     detail: {
       challenges: [
@@ -239,7 +239,7 @@ export const projects = [
       ],
       solution: '3者間連携のアーキテクチャを設計し、TCP通信によるリアルタイム制御とWeb画面による操作インタフェースを統合。障害切り分け用のログ設計と、先生方が直感的に操作できるUIにより、安定した授業支援環境を実現した。',
       techStack: {
-        'Backend': 'Java / SpringBoot',
+        'Backend': 'SpringBoot / Java',
         'Frontend': 'JavaScript / CSS / Bootstrap',
         'Database': 'MariaDB',
         'Server OS': 'Ubuntu',
@@ -350,7 +350,7 @@ export const skills = {
     label: 'Backend',
     items: [
       { name: 'Laravel / PHP', level: 95, years: '6年+' },
-      { name: 'Java / SpringBoot', level: 75, years: '4年+' },
+      { name: 'SpringBoot / Java', level: 75, years: '4年+' },
       { name: 'Python', level: 50, years: '1年+' }
     ]
   },
