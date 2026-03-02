@@ -124,15 +124,31 @@ export const projects = [
     tags: ['Laravel', 'Vue.js', 'MySQL'],
     summary: 'iPadの既存アプリをWebアプリケーションとして刷新。Laravel + Vue.jsを本格的に習得した案件であり、フリーランスとしてのチーム開発の起点。既存アプリから仕様を読み取り提案する力を養った。',
     detail: {
+      challenges: [
+        '既存のiPadアプリが老朽化し、Webブラウザ対応が必要',
+        'iPadアプリの仕様書が存在せず、動作から仕様を読み取る必要がある',
+        'フリーランスとして初のチーム開発への適応'
+      ],
+      solution: '既存iPadアプリの動作を分析・仕様化し、Laravel + Vue.jsによるWebアプリケーションとして刷新。ブラウザベースにすることでデバイス依存を解消し、保守性と拡張性を向上させた。',
       techStack: {
         'Backend': 'Laravel / PHP',
         'Frontend': 'Vue.js / JavaScript / CSS',
         'Database': 'MySQL'
       },
+      scale: {
+        'チーム規模': '全体9名（開発6名）',
+        '担当期間': '2023年9月〜'
+      },
+      features: [
+        '問い合わせページ機能',
+        '届出ページ機能',
+        '拾得物ステータス管理（保管・返還・処分）'
+      ],
       scope: '基本設計 → 詳細設計 → 実装・単体テスト → 結合テスト → 保守・運用',
       highlights: [
         'Laravel + Vue.jsの実践的な習得（以降の主力技術スタックの基盤）',
         '既存iPadアプリの動作から仕様を読み取り、Web版として提案・採用',
+        'クライアントへの追加要望の提案がほぼそのまま採用',
         'フリーランス初案件で最大9名のチーム開発に適応'
       ]
     }
@@ -145,10 +161,25 @@ export const projects = [
     tags: ['Java', 'SpringBoot', 'Bootstrap'],
     summary: '既存社内システムのリニューアル案件。アカウント管理と請求書作成機能を担当。GitHubを利用したブランチ運用・プルリクエストベースの開発フローを実践的に習得。',
     detail: {
+      challenges: [
+        '既存社内システムの老朽化と保守性の低下',
+        '複数メンバーによるDB定義の整合性確保',
+        'ブランチ運用・プルリクエストベースの開発フロー未経験'
+      ],
+      solution: '既存社内システムをJava / SpringBoot + Bootstrapでフルリニューアル。GitHubを活用したモダンな開発フローを導入し、チーム全体の開発効率を向上させた。',
       techStack: {
         'Backend': 'Java / SpringBoot',
         'Frontend': 'JavaScript / CSS / Bootstrap'
       },
+      scale: {
+        'チーム規模': '全体8名（開発4名）',
+        '担当期間': '2023年7月〜2024年2月'
+      },
+      features: [
+        'アカウント管理機能（ユーザー登録・権限管理）',
+        '請求書作成・出力機能',
+        '明細書の生成・編集'
+      ],
       scope: '基本設計 → 詳細設計 → 実装・単体テスト → 結合テスト → 保守・運用',
       highlights: [
         'GitHubを利用したブランチ運用・プルリクエストベースの開発フロー習得',
@@ -164,17 +195,32 @@ export const projects = [
     tags: ['Java', 'SpringBoot', 'Tomcat'],
     summary: 'SONY BRAVIAモニタの入力信号を監視し、異常検知時に自動通知。API調査からデプロイまで全工程を一人で完遂。Webhook通知とハードウェアAPI連携を経験。',
     detail: {
+      challenges: [
+        'BRAVIAモニタの入力信号異常を手動監視する運用負荷',
+        'ハードウェアAPIの公開ドキュメントが限定的で調査が必要',
+        '異常検知からリアルタイム通知までの一貫した自動化'
+      ],
+      solution: 'SONY BRAVIA APIと連携し、入力信号の状態を自動監視するSpringBootアプリケーションを構築。Webhook通知により、異常検知時に即座に担当者へ通知し、現場の運用負荷を大幅に削減した。',
       techStack: {
         'Backend': 'Java / SpringBoot',
         'Frontend': 'JavaScript / CSS',
         'Server OS': 'Windows 10',
         'MW': 'Tomcat'
       },
+      scale: {
+        'チーム規模': '1名（全工程を単独担当）',
+        '担当期間': '2021年11月〜2022年2月'
+      },
+      features: [
+        'BRAVIAモニタの入力信号リアルタイム監視',
+        '異常パターン検知ロジック',
+        'Webhook による自動通知機能'
+      ],
       scope: '要件定義 → 基本設計 → 詳細設計 → 実装・単体テスト → 結合テスト → 総合テスト → 保守・運用',
       highlights: [
         'Webhookによるリアルタイム通知機能の構築（イベント駆動型設計）',
         'BRAVIAのAPIドキュメント調査・ハードウェア連携開発',
-        '現場調査に基づく運用負荷最小化の設計'
+        '現場調査に基づく運用負荷最小化の設計（利用用途・グループ・スケジュールを考慮）'
       ]
     }
   },
@@ -186,6 +232,12 @@ export const projects = [
     tags: ['Java', 'SpringBoot', 'MariaDB', 'Ubuntu', 'Nginx'],
     summary: 'デスクトップアプリ・AV機器・Webアプリの3者間連携による授業支援システム。API作成、TCP通信機構構築、サーバー2台の構築など幅広く担当。',
     detail: {
+      challenges: [
+        'デスクトップアプリ・AV機器・Webアプリの3者間連携という複雑なアーキテクチャ',
+        '障害発生時の原因切り分けが困難な多層構成',
+        'エンドユーザー（先生方）がITに詳しくないため、シンプルなUI設計が必須'
+      ],
+      solution: '3者間連携のアーキテクチャを設計し、TCP通信によるリアルタイム制御とWeb画面による操作インタフェースを統合。障害切り分け用のログ設計と、先生方が直感的に操作できるUIにより、安定した授業支援環境を実現した。',
       techStack: {
         'Backend': 'Java / SpringBoot',
         'Frontend': 'JavaScript / CSS / Bootstrap',
@@ -193,6 +245,20 @@ export const projects = [
         'Server OS': 'Ubuntu',
         'MW': 'Nginx / Tomcat'
       },
+      scale: {
+        'チーム規模': '全体3名（開発2名）',
+        '担当期間': '2021年5月〜2024年1月',
+        'サーバー構成': '公開用 + 音声ミキシング用の2台'
+      },
+      features: [
+        'デスクトップアプリ連携API',
+        'AV制御用ハードウェアとのTCP通信機構',
+        '小テスト機能',
+        '管理者用UI（授業登録等）',
+        '受講者用UI',
+        '公開用・音声ミキシング用サーバー構築',
+        'データベース構築'
+      ],
       scope: '詳細設計 → 実装・単体テスト',
       highlights: [
         'Spring Bootでの本格的なアプリケーション構築',
@@ -210,11 +276,26 @@ export const projects = [
     tags: ['Java', 'PHP', 'JavaScript', 'AlmaLinux'],
     summary: '英語学習アプリにおける音声認識機能の開発。Google Chrome音声認識APIを活用し、教材配布・採点APIとの連携部分を構築。音声認識の精度向上にこだわった。',
     detail: {
+      challenges: [
+        '音声認識の精度がブラウザ環境やノイズに大きく左右される',
+        '教材配布・採点APIとの複雑な連携が必要',
+        '他開発者とのAPI結合をスムーズに進めるためのドキュメント整備'
+      ],
+      solution: 'Google Chrome音声認識APIを活用し、音声入力から採点APIへの連携パイプラインを構築。認識エラーの傾向分析と入力タイミング・ノイズ処理の調整により、学習効果に直結する認識精度を実現した。',
       techStack: {
         'Backend': 'Java / PHP',
         'Frontend': 'JavaScript / Bootstrap',
         'Server OS': 'MiracleLinux / AlmaLinux'
       },
+      scale: {
+        'チーム規模': '全体8名（開発2名）',
+        '担当期間': '2020年11月〜2024年1月'
+      },
+      features: [
+        'Google Chrome音声認識APIを利用した音声入力機能',
+        '教材配布APIとの連携',
+        '音声認識結果に基づく採点API連携'
+      ],
       scope: '基本設計 → 詳細設計 → 実装・単体テスト',
       highlights: [
         'API仕様のドキュメント化による他開発者とのスムーズな結合',
@@ -231,6 +312,12 @@ export const projects = [
     tags: ['PHP', 'MySQL', 'CentOS', 'Apache'],
     summary: '初のWebアプリ開発。サーバー構築からアプリケーション開発まで全工程を独学で完遂。ユーザーの声を収集して改善を継続し、社内に長期間定着するシステムに育てた。エンジニアとしての原点。',
     detail: {
+      challenges: [
+        '見積書作成が手作業（Excel等）で非効率・ミスが発生しやすい',
+        'Webアプリケーション開発・サーバー構築の経験がゼロの状態からの独学',
+        'リリース後の社内定着と継続利用の仕組み作り'
+      ],
+      solution: 'PHP + MySQLによるWebアプリケーションをLinuxサーバー上にゼロから構築。見積書の作成・管理をシステム化し、手作業によるミスを排除。リリース後もユーザーの声を収集して継続改善し、社内に長期定着するシステムに育てた。',
       techStack: {
         'Backend': 'PHP',
         'Frontend': 'JavaScript / CSS',
@@ -238,6 +325,16 @@ export const projects = [
         'Server OS': 'CentOS',
         'MW': 'Apache'
       },
+      scale: {
+        'チーム規模': '1名（全工程を単独担当）',
+        '担当期間': '2014年7月〜2015年4月'
+      },
+      features: [
+        '見積書の作成・編集UI',
+        '見積書の印刷用UI',
+        'データベース構築',
+        '公開用サーバー構築（CentOS + Apache + PHP）'
+      ],
       scope: '要件定義 → 基本設計 → 詳細設計 → 実装・単体テスト → 結合テスト → 総合テスト → 保守・運用',
       highlights: [
         'サーバー構築（Linux / Apache / PHP）からDB連携まで独学で習得・完遂',
